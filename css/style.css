@@ -53,7 +53,7 @@
 /*** JUMBOTRON ***/
 
 .jumbotron {
-    background-image: url("assets/ducks3.png");
+    background-image: url("../assets/ducks3.png");
     text-align: center;
     padding: 3%;
     border-radius: 3px;
