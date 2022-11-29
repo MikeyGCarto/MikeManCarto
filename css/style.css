@@ -133,3 +133,10 @@ body {
     background-color: #f7f1fa;
     color: #242424;
 }
+
+body{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+p{
+    font-size:20px;
+}
