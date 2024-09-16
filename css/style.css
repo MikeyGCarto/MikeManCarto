@@ -1,15 +1,24 @@
 /***** NAVBAR *****/
-
 .navbar {
-    background-color: #222;
+    background-color: #333; /* Darker background for better contrast */
     border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/***** NAVBAR *****/
+.navbar {
+    background-color: #333; /* Darker background for better contrast */
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Navbar title */
 .navbar-default .navbar-brand {
-    color: white;
-    font-size: 22px;
+    color: #fff; /* White color for better contrast */
+    font-size: 22px; /* Larger font size for the brand name */
     font-weight: bold;
+    letter-spacing: 0; /* Reset letter-spacing for consistency */
+    margin-right: 20px; /* Space between brand and links */
 }
 
 /* Navbar hover effects */
@@ -17,66 +26,74 @@
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color:rgb(120,120,120);
-    text-decoration: none;
+    color: #A9A9A9; /* Lighter color on hover */
+    
+	/*text-decoration: underline; /* Underline on hover for clarity */
 }
 
 /* Navbar links */
 .navbar-default .navbar-nav > li > a {
     color: #fff;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 18px; /* Font size for other links */
+    padding: 15px 20px; /* Increased padding for better touch targets */
+    letter-spacing: 0; /* Ensure consistency with navbar brand */
 }
 
 /* Navbar collapsed styles */
 .navbar-toggler {
     color: #fff;
-    border-color: #222;
-    background-color: #222;
+    border-color: #444; /* Slightly lighter border color */
+    background-color: #444; /* Match the background color */
     border-radius: 4px;
-    border: 1px solid;
-    fill: #222;
-    font-size: 16px;
-    position: relative;
-    margin-right: 10px;
+    font-size: 18px; /* Larger font size for accessibility */
 }
 
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-    background-color: #222;
-    color: #222;
-    fill: #222;
-    border-color: #222;
-
+    background-color: #555; /* Slightly lighter on hover */
+    color: #fff; /* Ensure text color remains white */
+    border-color: #555;
 }
+
+/* Menu icon */
+.navbar-toggler svg {
+    fill: #fff; /* Ensure icon color matches text */
+}
+
 
 /*** JUMBOTRON ***/
-
 .jumbotron {
-    background-image: url("../assets/ducks3.png");
+    position: relative;
+    background-image: url("../assets/MikeyGCartography.png");
+    background-size: cover; /* Ensure the background image covers the element */
+    background-position: center; /* Center the background image */
     text-align: center;
     padding: 3%;
-    border-radius: 3px;
-	padding-top:4.5%;
-	/* 1 pixel black shadow to left, top, right and bottom */
+    border-radius: 0px;
+    padding-top: 4.5%;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    font-family: sans; color: black;
-}
-  h1 {
-}
-	
-}
-}
-
-.jumbotron h2 {
-    font-size: 48px;
-    font-weight: bold;
-	
+    font-family: sans-serif; /* Corrected font-family property */
+    color: black;
+    width: 100%;
+    height: 300px; /* Fixed height */
+    max-width: 1920px; /* Maximum width */
+    margin: 0 auto; /* Center align horizontally */
 }
 
-.img-responsive{
-    width:100%;
+/* Responsive adjustments */
+@media (max-width: 1920px) {
+    .jumbotron {
+        width: 100vw; /* Full width of viewport */
+        height: 300px; /* Fixed height */
+    }
 }
+
+@media (max-width: 768px) {
+    .jumbotron {
+        height: 200px; /* Smaller height for mobile devices */
+    }
+}
+
 
 /*** CARD ***/
 
@@ -137,6 +154,52 @@ body {
 body{
     font-family: 'Goudy Bookletter 1911', serif;
 }
+p{
+    font-size:20px;
+}
+
+/*** About Section***/
+.about-heading {
+    font-size: 3rem; /* Adjust as needed for larger text size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Center the text within its container on all screen sizes */
+.text-center {
+    text-align: center;
+}
+
+/* Ensure responsiveness and proper spacing */
+#about {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+        /* Custom CSS to reduce margins between cards and container */
+        .container {
+            max-width: 75%; /* Make the container span the full width */
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .card {
+            margin-bottom: 20px; /* Add spacing between cards */
+        }
+
+        .card-body {
+            padding: 20px; /* Control padding inside card */
+        }
+
+        .row {
+            margin-left: 0;
+            margin-right: 0; /* Reduce margins between rows */
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 p{
     font-size:20px;
 }
